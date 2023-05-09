@@ -15829,6 +15829,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eleiko@workspace:eleiko":
+  version: 0.0.0-use.local
+  resolution: "eleiko@workspace:eleiko"
+  dependencies:
+    "@strapi/plugin-i18n": 4.10.2
+    "@strapi/plugin-users-permissions": 4.10.2
+    "@strapi/strapi": 4.10.2
+    better-sqlite3: 8.3.0
+  languageName: unknown
+  linkType: soft
+
 "elliptic@npm:^6.5.3, elliptic@npm:^6.5.4":
   version: 6.5.4
   resolution: "elliptic@npm:6.5.4"

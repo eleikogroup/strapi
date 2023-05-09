@@ -26,7 +26,8 @@
     "packages/*/*",
     "examples/*",
     ".github/actions/*",
-    "scripts/*"
+    "scripts/*",
+    "eleiko"
   ],
   "scripts": {
     "prepare": "husky install",
