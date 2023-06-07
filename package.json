@@ -34,6 +34,7 @@
     "setup": "yarn && yarn clean && yarn build",
     "clean": "nx run-many --target=clean --nx-ignore-cycles",
     "watch": "nx run-many --target=watch --nx-ignore-cycles",
+    "dev": "nx run-many --target=dev --nx-ignore-cycles",
     "build": "nx run-many --target=build --nx-ignore-cycles",
     "build:ts": "nx run-many --target=build:ts --nx-ignore-cycles",
     "generate": "plop --plopfile ./packages/generators/admin/plopfile.js",

@@ -60,6 +60,8 @@ const createFieldSizesService = ({ strapi }) => {
       const fieldSize = fieldSizes[type];
       if (!fieldSize) {
         throw new ApplicationError(`Could not find field size for type ${type}`);
+        // console.warn(`Could not find field size for type ${type}`);
+        // return defaultSize;
       }
 
       return fieldSize;

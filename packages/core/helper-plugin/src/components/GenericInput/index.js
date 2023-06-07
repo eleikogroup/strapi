@@ -17,6 +17,8 @@ import {
   Icon,
   NumberInput,
   Select,
+  MultiSelect,
+  MultiSelectOption,
   Textarea,
   TextInput,
   TimePicker,
@@ -397,6 +399,32 @@ const GenericInput = ({
             );
           })}
         </Select>
+      );
+    }
+    case 'multiselect': {
+      return (
+        <MultiSelect
+          disabled={disabled}
+          error={errorMessage}
+          label={label}
+          labelAction={labelAction}
+          id={name}
+          hint={hint}
+          name={name}
+          onChange={(value) => onChange({ target: { name, value, type: 'select' } })}
+          placeholder={formattedPlaceholder}
+          required={required}
+          value={value}
+          withTags
+        >
+          {options.map(({ metadatas: { intlLabel, disabled, hidden }, key, value }) => {
+            return (
+              <MultiSelectOption key={key} value={value} disabled={disabled} hidden={hidden}>
+                {formatMessage(intlLabel)}
+              </MultiSelectOption>
+            );
+          })}
+        </MultiSelect>
       );
     }
     case 'textarea': {
