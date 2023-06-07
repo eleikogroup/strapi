@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_common_links",
+  "info": {
+    "displayName": "link",
+    "icon": "link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "multiCulture": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "customField",
+      "customField": "plugin::url.url",
+      "required": true,
+      "options": {
+        "allowedTypes": [
+          "Product",
+          "Page",
+          "External"
+        ]
+      }
+    }
+  }
+}
